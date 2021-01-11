@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 80px;
+}
+header > nav{
+    height:80px;
+}
+
+header > div{
+    float: left;
+}
+
+header > div > a > img {
+    width: 150px;
+    height: 70px;
+    margin: 0 40px 0 80px;
+}
+
+header > nav > ul > li{
+    list-style-type: none;
+    float: left;
+    position: relative;
+}
+
+header > nav > ul > li > a{
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    color:black;
+    height: 40px;
+    line-height: 40px;
+    margin: 20px 10px;
+}
+header > nav > ul > li > a:hover{
+    color: rgb(197, 2, 51);
+}
+
+header > nav > ul > li:last-child > a{
+background-color: rgb(197, 2, 51);
+color: white;
+border-radius: 20px;
+padding: 0 10px;
+}
+
+header > nav > ul > li:last-child > a:hover{
+    color: rgb(197, 2, 51);
+    border: solid rgb(197, 2, 51) 2px;
+    background-color: white;
+}
+
+/*sous menu*/
+
+
+header > nav > ul > li > ul {
+    list-style-type: none;
+    position: absolute;
+    left: 0;
+    top: 80px;
+    background-color: white;
+}
+
+header > nav > ul > li:hover ul{
+    display: block;
+}
+
+header > nav > ul > li > ul {
+    display: none;
+    border-top: solid  rgb(197, 2, 51) 2px;
+    padding: 20px;
+}
+
+header > nav > ul > li > ul > li {
+    white-space:nowrap;
+}
+
+header > nav > ul > li > ul > li > a{
+    text-decoration: none;
+    color: rgb(92, 92, 92);
+    font-size: 13px;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+}
+
+header > nav > ul > li > ul > li:nth-child(1n+2) > a{
+    border-top: rgba(170, 169, 169, 0.568) solid 1px;
+}
+
+/*Main*/
+
+
+body > main > section:first-child {
+    height: 300px;
+    padding: 150px 450px;
+    background-image: url(image/header_catalogue.png);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+}
+
+body > main > section:first-child > h1{
+    font-weight: bold;
+    font-size:50px;
+    padding: 10px;
+}
+
+body > main > section:first-child > p{
+    font-size: 23px;
+}
+
+
+
+body > main > section:nth-child(2){
+    text-align: center;
+}
+
+body > main > section:nth-child(2) > h2{
+ margin-top: 100px;
+ margin-bottom: 20px;
+}
+
+body > main > section:nth-child(2) > p{
+    margin-bottom: 100px;
+}
+
+body > main > section:nth-child(2) > div{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 87vw;
+    margin: 0 85px;
+}
+
+body > main > section:nth-child(2) > div > article{
+    background-color: rgba(223, 217, 217, 0.13) ;
+    height: 350px;
+    width: 250px;
+    padding: 60px;
+    margin: 20px 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+body > main > section:nth-child(2) > div > article > p{
+    color: grey;
+}
+
+body > main > section:nth-child(2) > div > article > a{
+    text-decoration: none;
+    color: rgb(197, 2, 51);
+    border: solid rgb(197, 2, 51) 2px;
+    padding: 10px 30px;
+}
+
+body > main > section:nth-child(2) > div > article > a:hover{
+    background-color: rgb(197, 2, 51);
+    color: white;
+}
+
+section.pedagogie{
+ display: flex;
+ padding: 100px 200px;
+ height: 450px;
+}
+
+section.pedagogie > figure > img{
+    width: 450px;
+    height: 350px;
+    margin: 0 50px;
+}
+section.pedagogie > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section.pedagogie > div > h3{
+    font-size: 22px;
+}
+
+section.pedagogie > div > p{
+    font-size: 20px;
+    color: rgb(87, 85, 85);
+}
+
+section.pedagogie > div > ol{
+    padding: 30px 0 0 15px;
+    color: rgb(87, 85, 85);
+    list-style-image: url(image/puce_losange.gif);
+}
+
+section.pedagogie > div > ol > li{
+    padding-left: 15px;
+}
+
+section.apprendre{
+    box-sizing: border-box;
+    box-shadow: rgba(184, 178, 178, 0.315) 0px 0px 20px 5px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 10px;
+    height: 170px;
+    width: 600px;
+}
+
+section.apprendre > figure{
+    float: left;
+    padding: 0 20px;
+}
+
+section.apprendre > h3{
+    color: rgb(165, 162, 162);
+    font-size: 24px;
+}
+
+section.apprendre > h3 > span{
+    color: rgb(197, 2, 51);
+}
+
+section.apprendre > p{
+    color: rgb(87, 85, 85);
+}
+
+section.normes{
+    display: flex;
+    padding: 100px 300px;
+    height: 530px;
+}
+
+section.normes > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section.normes > div > h3{
+    font-size: 27px;
+}
+
+section.normes > div > p{
+    font-size: 20px;
+    color: rgb(87, 85, 85);
+}
+
+section.normes > div > figure > img:nth-child(1){
+    margin-top: 25px;
+}
+
+section.normes > div > figure > img:nth-child(3){
+    height: 55px;
+    width: 200px;
+}
+
+section.normes > figure > img{
+    height:350px; 
+    width:450px;
+    margin-left: 50px;
+}
+
+/*Footer*/
+
+footer{
+    background-color: rgba(0, 0, 0, 0.911);
+    display: flex;
+    padding: 50px 100px;
+}
+
+footer > div{
+    width: 350px;
+    margin-left: 30px;
+}
+
+footer > div > h4{
+    color: white;
+    padding-bottom: 10px;
+}
+
+footer > div > p{
+    color: rgb(87, 85, 85);
+}
+
+footer > div:nth-child(1) > img{
+    width: 160px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+footer > div:nth-child(1) > p{
+    padding-bottom: 15px;
+    border-bottom:rgb(87, 85, 85) solid 1px;
+}
+
+footer > div > ul{
+    list-style-type: none; 
+    margin-top: 15px;
+    display: flex;
+
+}
+
+footer > div > ul > li{
+    margin-right: 15px ;
+}
+
+footer > div:first-child > ul > li > a{
+    text-decoration: none;
+    color: grey;
+    font-size: 12px;
+}
+
+footer > div > a {
+    margin-top: 15px;
+    text-decoration: none;
+    color: grey;
+}
+
+footer > div:nth-child(3) > img{
+    padding-top: 40px;
+}
